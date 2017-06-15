@@ -4,11 +4,15 @@
 
 export default {
   state: {
-    message: 'yes!'
+    message: 'yes!',
+    newsList:[],
   },
   mutations: {
     MESSAGE (state, value) {
       state.message = value || state.message;
+    },
+    NEWSLIST (state, value) {
+      state.newsList = value || state.newsList;
     }
   }
 }

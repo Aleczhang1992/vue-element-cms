@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { Indicator } from 'mint-ui'
+//import { Indicator } from 'mint-ui'
 
   export default {
     data () {
@@ -24,13 +24,7 @@ import { Indicator } from 'mint-ui'
 //    }
     },
     created(){
-  	 	Indicator.open({
-		  text: '加载中...',
-		  spinnerType: 'fading-circle'
-		});
-        setTimeout(h => {
-            Indicator.close();
-        }, 500);
+
   },
     mounted () {
 

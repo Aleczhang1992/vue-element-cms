@@ -4,6 +4,9 @@ import Vue from 'vue';
 import App from './App';
 import VueRouter from 'vue-router';
 import Vuex from 'vuex';
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-default/index.css'
+
 //引入自定义配置
 import routes from './routes';
 import storeOption from './store';
@@ -11,6 +14,7 @@ import storeOption from './store';
 //全局使用
 Vue.use(VueRouter);
 Vue.use(Vuex);
+Vue.use(ElementUI);
 
 const router = new VueRouter({
   mode: 'history',

@@ -1,39 +1,23 @@
 <template>
   <div class="hello">
+  	
   	<img class="logo" src="../assets/logo.png">
  	<p class="welcome">欢迎使用进入测试页面1！</p>
-  	<mt-navbar v-model="selected">
-  <mt-tab-item id="1">选项一</mt-tab-item>
-  <mt-tab-item id="2">选项二</mt-tab-item>
-  <mt-tab-item id="3">测试页面2</mt-tab-item>
-</mt-navbar>
-
-<!-- tab-container -->
-<mt-tab-container v-model="selected">
-  <mt-tab-container-item id="1">
-    <mt-cell v-for="n in 10" :title="'内容 ' + n" />
-  </mt-tab-container-item>
-  <mt-tab-container-item id="2">
-    <mt-cell v-for="n in 4" :title="'测试 ' + n" />
-  </mt-tab-container-item>
-  <mt-tab-container-item id="3">
-    <router-link :to="{ name: 'testPage', params: { userId: 123 }}">进入测试页面2</router-link>
-  </mt-tab-container-item>
-</mt-tab-container>
+	
 <div v-html="content"></div>
   </div>
 </template>
 
 <script>
-import Vue from 'vue'
-import {mapState} from 'vuex'
-import { Navbar, TabItem, TabContainer, TabContainerItem, Cell, Indicator } from 'mint-ui'
 
-Vue.component(Navbar.name, Navbar)
-Vue.component(TabItem.name, TabItem)
-Vue.component(TabContainer.name, TabContainer)
-Vue.component(TabContainerItem.name, TabContainerItem)
-Vue.component(Cell.name, Cell)
+import {mapState} from 'vuex'
+//import { Navbar, TabItem, TabContainer, TabContainerItem, Cell, Indicator } from 'mint-ui'
+//
+//Vue.component(Navbar.name, Navbar)
+//Vue.component(TabItem.name, TabItem)
+//Vue.component(TabContainer.name, TabContainer)
+//Vue.component(TabContainerItem.name, TabContainerItem)
+//Vue.component(Cell.name, Cell)
 
 export default {
   name: 'hello',
@@ -45,11 +29,11 @@ export default {
     }
   },
   components: {
-    'mt-navbar': Navbar,
-    'mt-tab-item': TabItem,
-    'mt-tab-container': TabContainer,
-    'mt-tab-container-item': TabContainerItem,
-    'mt-cell': Cell,
+//  'mt-navbar': Navbar,
+//  'mt-tab-item': TabItem,
+//  'mt-tab-container': TabContainer,
+//  'mt-tab-container-item': TabContainerItem,
+//  'mt-cell': Cell,
   },
   methods: {
       async getContent () {
@@ -63,13 +47,7 @@ export default {
       'message'
     ]),
   created(){
-  	 	Indicator.open({
-		  text: '加载中...',
-		  spinnerType: 'fading-circle'
-		});
-        setTimeout(h => {
-            Indicator.close();
-        }, 500);
+  	 	
   },
   mounted () {
   	//组件加载时
