@@ -5,7 +5,7 @@ A Vue.js project
 
 ##说明：
 
-通过官方vue-cli脚手架创建，使用webpack打包管理工具，集成mint-ui,vue-router,vuex
+通过官方vue-cli脚手架创建，使用webpack打包管理工具，集成element-ui,vue-router,vuex,简单的内容管理系统原型
 ## Build Setup
 
 ``` bash
